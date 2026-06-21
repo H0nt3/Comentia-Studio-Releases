@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Comentia Studio — Descargas</title>
+<style>
+  :root { color-scheme: light; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: #f8f9fa;
+    color: #212529;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  header {
+    background: linear-gradient(135deg, #0d6efd, #6610f2);
+    color: white;
+    padding: 4rem 1.5rem 3rem;
+    text-align: center;
+  }
+  header h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+  header p { font-size: 1.1rem; opacity: 0.9; }
+  main {
+    flex: 1;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 2.5rem 1.5rem;
+  }
+  h2 { margin-bottom: 1rem; color: #0d6efd; }
+  .cards {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 1.5rem;
+  }
+  .card {
+    background: white;
+    border: 1px solid #dee2e6;
+    border-radius: 12px;
+    padding: 1.5rem 1.2rem;
+    text-align: center;
+    text-decoration: none;
+    color: #212529;
+    transition: box-shadow 0.2s, transform 0.2s;
+    width: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .card:hover {
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    transform: translateY(-3px);
+  }
+  .card .os { font-size: 2.2rem; margin-bottom: 0.5rem; }
+  .card .label { font-weight: 600; margin-bottom: 0.2rem; }
+  .card .ext { font-size: 0.85rem; color: #6c757d; }
+  .linux-group {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .linux-group .card {
+    align-self: center;
+  }
+  .changelog {
+    margin-top: 2.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #dee2e6;
+    font-size: 0.92rem;
+    color: #6c757d;
+    text-align: center;
+  }
+  .changelog a { color: #0d6efd; }
+  .version {
+    text-align: left;
+    margin-bottom: 1rem;
+    padding: 0.75rem 1rem;
+    background: white;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+  }
+  .version strong { color: #212529; }
+  .version .date { color: #adb5bd; font-size: 0.82rem; margin-left: 0.5rem; }
+  .version p { margin-top: 0.3rem; color: #495057; }
+  footer {
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.85rem;
+    color: #6c757d;
+  }
+  footer a { color: #6c757d; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Comentia Studio</h1>
+  <p>Aplicación de escritorio que extrae y analiza comentarios de noticias de diarios deportivos (Marca, AS, Mundo Deportivo y Sport)</p>
+</header>
+<main>
+  <h2>Descargas</h2>
+  <div class="cards">
+    <a class="card" href="https://github.com/H0nt3/Comentia-Studio-Releases/releases/latest/download/ComentiaStudio-Windows.exe">
+      <div class="os">🪟</div>
+      <div class="label">Windows</div>
+      <div class="ext">.exe</div>
+    </a>
+    <div class="linux-group">
+      <a class="card" href="https://github.com/H0nt3/Comentia-Studio-Releases/releases/latest/download/ComentiaStudio-Linux.deb">
+        <div class="os">🐧</div>
+        <div class="label">Linux</div>
+        <div class="ext">.deb</div>
+      </a>
+      <a class="card" href="https://github.com/H0nt3/Comentia-Studio-Releases/releases/latest/download/ComentiaStudio-Linux.AppImage">
+        <div class="os">🐧</div>
+        <div class="label">Linux</div>
+        <div class="ext">.AppImage</div>
+      </a>
+    </div>
+    <a class="card" href="https://github.com/H0nt3/Comentia-Studio-Releases/releases/latest/download/ComentiaStudio-macOS.zip">
+      <div class="os">🍎</div>
+      <div class="label">macOS</div>
+      <div class="ext">.zip</div>
+    </a>
+  </div>
+  <div class="changelog">
+    <div class="version">
+      <strong>v1.2.1</strong> <span class="date">2026-06-19</span>
+      <p>Pares de hashes en fila horizontal sin etiqueta secundaria. Par por defecto SHA1+SHA-256. Etiquetas compactas con normalizacion de configuraciones antiguas.</p>
+    </div>
+    <a href="https://github.com/H0nt3/Comentia-Studio-Releases/releases">Todas las versiones</a>
+  </div>
+</main>
+<footer>
+  <a href="https://github.com/H0nt3/Comentia-Studio-Releases">GitHub</a>
+</footer>
+</body>
+</html>
